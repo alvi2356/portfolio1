@@ -1,27 +1,524 @@
-<section class="contact" id="contact">
-        <h1 class="heading" data-sr-id="6" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;">Contact <span>Me!</span></h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arman Alvi</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="logo.png" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Arman Alvi</h1>
+            <p>
+                I am a web developper,graphic designer and video editor. Currently, I am a student of Computer Science
+                and Engineering (CSE).
+            </p>
+            <p>I specialize in creating digital designs, editing videos, and developing
+                websites. My passion lies in blending creativity with technology to produce engaging and functional
+                content. I also work on Fiverr, offering design and editing services.and WordPress.</p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/armanalvi.arman"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/a.alvi_420"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https:github.com/alvi2356"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/arman-alvi-11179a267/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.upwork.com/freelancers/~013c9ecc2f54891e95"><i class='bx bxl-upwork'></i></a>
+            </div>
+
+            <a href="cv.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-camera'></i>
+                    <h3>Graphic Designer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Video Editor</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-video-recording'></i>
+                    <h3>Video Editor</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hello and welcome to my website! I'm Arman Alvi, a passionate graphic designer and video editor, always
+                eager to explore
+                new creative tools and bring ideas to life through design and editing!
+            </h3>
+            <body>
+               
+                <div class="about-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="openTab(event, 'main-skill')">Main Skill</button>
+                        <button class="tab-btn" onclick="openTab(event, 'education')">Education</button>
+                        <button class="tab-btn" onclick="openTab(event, 'awards')">Awards</button>
+                        <button class="tab-btn" onclick="openTab(event, 'activities')">Activities</button>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <div id="main-skill" class="tab-panel active">
+                          
+                            <body>
+                                <div class="skills">
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span>Web Design</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span>C</span>
+                                            <span class="skill-percentage">75%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span>JAVA</span>
+                                            <span class="skill-percentage">75%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span>Video Editing</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 85%;"></div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span>Graphics Design</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 85%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            
+                        </div>
+                        <div id="education" class="tab-panel">
+                            
+                           
+                                <ul class="education-list">
+                                    <li>
+                                        
+                                        Bsc. in CSE <a href="https://www.uap-bd.edu">- University of Asia Pacific, Farmgate, Dhaka</a> -2023 - Current
+                                    </li>
+                                    <li>
+                                        HSC in Science-<a href="https://www.abdurroufcollege.ac.bd/">Birsreths Munshi Abdur Rouf Public College</a> - GPA: 5 2021
+                                    </li>
+                                    <li>
+                                        SSC in Science-<a href="https://www.abdurroufcollege.ac.bd/">Birsreths Munshi Abdur Rouf Public College</a> - GPA: 5 2019
+                                    </li>
+                                    <li>
+                                        JSC-<a href="https://www.abdurroufcollege.ac.bd/">Birsreths Munshi Abdur Rouf Public College</a> - GPA: 5 2016
+                                    </li>
+                                    <li>
+                                        PSC-<a href="https://www.facebook.com/littleangelsschool.official">Little Angels School, Azimpur</a> - GPA: 5 2013
+                                    </li>
+                                    
+                                </ul>   
+                </div>
+                
+                <div id="awards" class="tab-panel">
+                            
+                           
+                    <ul class="awards-list">
+                        <li>
+                            
+                            <span>Intra university ctf contest 2.0</span>- 2nd Runner-Up -<span> 2023</span>
+                        </li>
+                        <li>
+                            
+                            <span>1st SCRC National Science Fest</span>- Champion -<span> 2018</span>
+                        </li>
+                        <li>
+                            
+                            <span>ACC National ICT Fest </span>- 2nd Runner-Up -<span> 2017</span>
+                        </li>
+                        <li>
+                            
+                            <span>5th BMARPC Science Carnival</span>- 2nd Runner-Up -<span> 2016</span>
+                        </li>
+                        <li>
+                            
+                            <span>Inter House Football Tournament </span>- Champion -<span> 2016</span>
+                        </li>
+                        
+                    </ul>   
+    </div>
+                
+                
+           
+       
+                <div id="activities" class="tab-panel">
+                            
+                           
+                    <ul class="activities-list">
+                        <li>
+                            
+                           Treasurer <a href="https://cybersecurity.uap-bd.edu/">- Cyber Security Club,CSE-UAP</a>
+                        </li>
+                        <li>
+                            Executive Member - <a href="https://www.facebook.com/CELCUAP/">Central English Language Club,UAP</a>
+                        </li>
+                        <li>
+                            Volunteer - <a href="https://www.unicef.org/bangladesh/en/topics/volunteers">Unicef Bangladesh</a>
+                        </li>
+                        <li>
+                           Former General Member - <a href="https://www.abdurroufcollege.ac.bd/details/science-club">Science Club of Rouf College</a> 
+                        </li>
+                        <li>
+                           Former Cadet Under Officer - <a href="https://bncc.info/air-wing">Bangladesh National Cadet Corps Air Wing</a> 
+                        </li>
+                        
+                    </ul>   
+    </div>
+           
+ <script>
+                function openTab(event, tabName) {
+                    var i, tabPanel, tabBtn;
+                    
+                    tabPanel = document.getElementsByClassName("tab-panel");
+                    for (i = 0; i < tabPanel.length; i++) {
+                        tabPanel[i].style.display = "none";
+                    }
+                
+                    tabBtn = document.getElementsByClassName("tab-btn");
+                    for (i = 0; i < tabBtn.length; i++) {
+                        tabBtn[i].classList.remove("active");
+                    }
+                
+                    document.getElementById(tabName).style.display = "block";
+                    event.currentTarget.classList.add("active");
+                }
+                </script>
+         
+    
+    </section>
+    
+    
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Design</h3>
+                <p>I offer professional web design services, creating modern, responsive, and visually appealing
+                    websites tailored to your needs.</p>
+                <a href="https://www.upwork.com/freelancers/~013c9ecc2f54891e95?viewMode=1&s=1044578476142100517" class="btn">Order</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Video Editing</h3>
+                <p>Expert video editing services producing high-quality, captivating videos with smooth transitions, stunning effects,
+                and refined visuals for businesses and social platforms.</p>
+                <a href="https://www.upwork.com/freelancers/~013c9ecc2f54891e95" class="btn">Order</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-photo-album' ></i>
+                <h3>Graphics Designing</h3>
+                <p>Professional graphic design services creating visually appealing logos, branding, social media graphics, and
+                    marketing materials for businesses.</p>
+                <a href="https://www.upwork.com/freelancers/~013c9ecc2f54891e95?s=1044578476142100517" class="btn">Order</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <h4 class="sub-heading">Websites</h4>
+            </div>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Web Developed for cyber Security Club UAP </p>
+                    <a href="https://alvi2356.github.io/cybersecu/index.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Developed</h4>
+                    <p>Web Developped for JAD Global Education</p>
+                    <a href="https://dev-jadglobaleducation.pantheonsite.io/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Developped</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="https://nutritionistnagmajahan.mydurable/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+           
+    </section>
+    <!--extended section of projects-->
+   
+    <section class="portfolio" id="portfolio">
+    
+        <h3 class="sub-heading">Video Editing</h3>
+            </div>
+        <div class="portfolio-container">
+            
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Promo Video</h4>
+                    <p>Edited Promo Video for Cyber Security Club</p>
+                    <a href="https://www.youtube.com/watch?v=Amg7VjH4t_M"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Cinematic Video</h4>
+                    <p>Cinematic Video of Atghor Kuriana.</p>
+                    <a href="https://www.youtube.com/watch?v=_IJtC-02Wpc"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Promo Video</h4>
+                    <p>Promo Video of English Language Club</p>
+                    <a href="http://youtube.com/watch?v=drdEEPLBTzU"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+            
+        </section>    
+        <!--extended asection of projects-->
+    <section class="portfolio" id="portfolio">
+    
+        <h1 class="sub-heading">Graphics Designing</h1>
+            </div>
+        <div class="portfolio-container">
+            
+            <div class="portfolio-box">
+                <img src="images/portfolio7.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Poster Design</h4>
+                    <p>Poster Designed for Cyber Security Club</p>
+                    <a href="./images/portfolio7.jpg"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio8.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Facebook Post Design</h4>
+                    <p>Facebook Post Design for English Language Club</p>
+                    <a href="./images/portfolio8.jpg"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio9.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Handbill Design</h4>
+                    <p>Handbill designed for Cyber Security club Uap</p>
+                    <a href="./images/portfolio9.jpg"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    <!-- testimonial design -->
+    <div class="testimonial-container">
+        <h2 class="heading">My <span>Certificates</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/testimonial1.jpg" alt="">
+                        <h3>Jackson Levi</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
+                            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
+                            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
+                            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
+                            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
+                            dolores.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/testimonial2.jpg" alt="">
+                        <h3>Flora Ocean</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
+                            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
+                            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
+                            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
+                            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
+                            dolores.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/testimonial3.jpg" alt="">
+                        <h3>Julian Grayson</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
+                            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
+                            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
+                            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
+                            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
+                            dolores.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact <span>Me!</span></h1>
 
         <div class="contact-banner">
             <div class="contact-form">
                 
-                <form data-sr-id="19" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                <form>
                     <div class="input-box">
-                        <input type="text" placeholder="Your Name" required="">
-                        <input type="email" placeholder="Your Email" required="">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
                     </div>
-                    <textarea placeholder="Your Message" required=""></textarea>
+                    <textarea placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
             <div class="contact-info">
                 <h2>Get in Touch</h2>
-                <p><i class="bx bx-phone"></i> Phone: +8801516599976</p>
-                <p><i class="bx bx-envelope"></i> Email: armanalvi2356@gmail.com</p>
+                <p><i class='bx bx-phone'></i> Phone: +8801516599976</p>
+                <p><i class='bx bx-envelope'></i> Email: armanalvi2356@gmail.com</p>
                 
-                <p><i class="bx bx-map"></i> Address: Lalbagh, Dhaka-1211</p>
+                <p><i class='bx bx-map'></i> Address: Lalbagh, Dhaka-1211</p>
             </div>
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.905198123198!2d90.3922043153604!3d23.7103995845861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7c1c1c1c1c1%3A0x1234567890abcdef!2sLalbagh%20Kella!5e0!3m2!1sen!2sbd!4v1631234567890!5m2!1sen!2sbd" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.905198123198!2d90.3922043153604!3d23.7103995845861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7c1c1c1c1c1%3A0x1234567890abcdef!2sLalbagh%20Kella!5e0!3m2!1sen!2sbd!4v1631234567890!5m2!1sen!2sbd" 
+                    width="300" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
             </div>
         </div>
     </section>
+    
+    <!-- Include Boxicons CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 | All Rights Reserved by Arman Alvi</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
