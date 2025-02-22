@@ -880,7 +880,9 @@ span {
 }
 
 .contact form .btn:hover {
-    background: var(--text-color);
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
 }
 
 .contact-info {
