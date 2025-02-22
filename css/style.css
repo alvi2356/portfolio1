@@ -800,10 +800,12 @@ span {
 .contact {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Changed from flex-start to center */
+    width: 100%; /* Added to ensure full width */
 }
 
 .contact h2 {
+    width: 100%; /* Added to ensure full width */
     margin-bottom: 3rem;
     text-align: center;
     color: var(--primary-color);
